@@ -1,0 +1,7 @@
+C:\Users\Home PC\source\repos\PairedProject_ConsoleApp\PairedProject_ConsoleApp\obj\Debug\PairedProject_ConsoleApp.csprojAssemblyReference.cache
+C:\Users\Home PC\source\repos\PairedProject_ConsoleApp\PairedProject_ConsoleApp\obj\Debug\PairedProject_ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Home PC\source\repos\PairedProject_ConsoleApp\PairedProject_ConsoleApp\bin\Debug\PairedProject_ConsoleApp.exe.config
+C:\Users\Home PC\source\repos\PairedProject_ConsoleApp\PairedProject_ConsoleApp\bin\Debug\PairedProject_ConsoleApp.exe
+C:\Users\Home PC\source\repos\PairedProject_ConsoleApp\PairedProject_ConsoleApp\bin\Debug\PairedProject_ConsoleApp.pdb
+C:\Users\Home PC\source\repos\PairedProject_ConsoleApp\PairedProject_ConsoleApp\obj\Debug\PairedProject_ConsoleApp.exe
+C:\Users\Home PC\source\repos\PairedProject_ConsoleApp\PairedProject_ConsoleApp\obj\Debug\PairedProject_ConsoleApp.pdb
