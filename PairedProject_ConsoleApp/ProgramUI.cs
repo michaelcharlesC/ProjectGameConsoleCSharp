@@ -102,7 +102,8 @@ namespace PairedProject_ConsoleApp
                 "2) Movies \n" +
                 "3) Video Games \n" +
                 "4) Random \n" +
-                "5) Exit game");
+                "5) Check your score here after you finish to see if you won.\n" +
+                "6) Exit game");
 
 
             string topicSelection = Console.ReadLine();
@@ -122,6 +123,17 @@ namespace PairedProject_ConsoleApp
                     topicSelectionPage.RandomRoundOne();
                     break;
                 case 5:
+                    int cashNowWallet = _repoWalled.CheckCashWallet();
+                    Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
+                    Console.ReadKey();
+                    Console.WriteLine("You did not reached the minimum score of 15 points. Prepare to DIE!\n" +
+                        " *BANG* ");
+                    Console.ReadKey();
+                    _repoWalled.ExitGame();
+                    break;
+                    
+                    break;
+                case 6:
                     _repoWalled.ExitGame();
                     break;
                 default:
@@ -182,7 +194,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -237,7 +249,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -290,7 +302,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine(); ;
 
@@ -346,7 +358,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             Console.ReadLine();
 
             ProgramUI hystorySecond = new ProgramUI();
@@ -400,7 +412,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -455,7 +467,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -511,7 +523,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -564,7 +576,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -617,7 +629,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -670,7 +682,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -724,7 +736,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -778,7 +790,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -832,7 +844,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -886,7 +898,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -941,7 +953,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -997,7 +1009,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -1051,7 +1063,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -1104,7 +1116,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -1158,7 +1170,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
@@ -1211,7 +1223,7 @@ namespace PairedProject_ConsoleApp
             }
             Console.ReadLine();
             int cashNowWallet = _repoWalled.CheckCashWallet();
-            Console.WriteLine($"You currently have ${cashNowWallet} in your wallet. ");
+            Console.WriteLine($"You currently have {cashNowWallet} point in your wallet. ");
             _repoWalled.didUserReachedGoal();
             Console.ReadLine();
 
